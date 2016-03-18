@@ -24,7 +24,7 @@ asyncCallback = (error ,result)->
   if !error
     # console.log result.content
     json = result.content
-    console.log json
+    # console.log json
     return future.return result.content
   else
     return future.throw new Meteor.Error 404, error, error
@@ -36,18 +36,33 @@ Meteor.methods
   # vfPIN maxLength: 4
   # merchantCode=711500
   verifyCode: (doc)->
-    # check(doc, Object)
-    # check(doc.smsCode, String)
+    check(doc, Object)
+    check(doc.smsCode, String)
 
     options = {
-      smsCode: "330800" # smsCode is not necessary
-      vfPIN: "4567"     # vfPIN is not necessary
+      smsCode: doc.smsCode  # is not necessary
+      vfPIN: "4567"         # vfPIN is not necessary
     }
 
     future = new Future()
     url = Config.vodafoneApiUrl
 
-    HTTP.post("#{url}/SMSValidation.php", {params: options}, asyncCallback)
+    HTTP.post("#{url}/SMSValidation.php", {params: options}, (error, result)->
+      if !error
+        # Fuck this part doesn't do anything
+        # Send completeTransaction
+        ###
+        phone: $('#phone').val(),
+        vfPIN: $('#vfPIN').val(),
+        amount: $('#amount').val(),
+        smsCode: $('#smsCode').val(),
+        merchantCode: $('#merchantCode').val()
+        ###
+        # Meteor.call 'completeTransaction',
+        return future.return result.content
+      else
+        return future.throw new Meteor.Error 404, error, error
+    )
     future.wait()
     return
 

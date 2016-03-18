@@ -88,3 +88,6 @@ Cards.helpers
 
   numberOfTokens: ->
     return @tokens?.obj?.length || 0
+
+  tokensLeft: ->
+    return @tokens?.obj?.length || 0

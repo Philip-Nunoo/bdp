@@ -1,0 +1,25 @@
+<template name="customerLayout">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="...">
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    {{> customerNav}}
+    {{> yield}}
+  </div>
+</template>
+
+<template name="customerNav">
+  <ul class="nav nav-pills">
+    <li class="{{isActiveRoute class='active' name='dashboard'}}"><a href="{{pathFor 'dashboard'}}">Account Overview</a></li>
+    <li><a href="#">All Transactions</a></li>
+    <li><a href="{{pathFor 'allBankAccount'}}">Bank Accounts</a></li>
+    <li><a href="#">Mobile Wallets</a></li>
+    <li><a href="#">Settings</a></li>
+  </ul>
+</template>

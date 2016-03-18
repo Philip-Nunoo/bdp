@@ -1,0 +1,68 @@
+<template name="allBankAccounts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{> allBankAccountsTable}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="allBankAccountsTable">
+  <div class="responsive table">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>All Bank Accounts</h3>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <td>
+              Bank Details
+            </td>
+            <td>
+              Status
+            </td>
+            <td>
+              Action
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+    <a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">Add New Bank account</a>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

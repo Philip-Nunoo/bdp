@@ -1,0 +1,23 @@
+<template name="tokensSetupForm">
+  {{#autoForm schema='Schemas.Tokens' id='updateToken' type='normal' preserveForm=false}}
+
+    {{> afQuickField name='type' type='select-radio' template="buttonGroup" label=false}}
+
+    {{#if afFieldValueIs name="type" value="access"}}
+      {{> afQuickField name="accessUrl"}}
+    {{/if}}
+    {{#if afFieldValueIs name="type" value="auto"}}
+      {{> afQuickField name="numberOfCards"}}
+    {{/if}}
+    {{#if afFieldValueIs name="type" value="import"}}
+      {{#unless uploading}}
+        <input type="file" name="uploadCSV">
+      {{else}}
+        <p><i class="fa fa-spin fa-refresh"></i> Uploading files...</p>
+      {{/unless}}
+    {{/if}}
+    {{> afQuickField name='cardId' type='hidden' value=this.cardId}}
+    {{> afQuickField name='obj' type='hidden' value=codes}}
+    <button type="submit" class="btn btn-primary">Insert</button>
+  {{/autoForm}}
+</template>

@@ -6,11 +6,11 @@ Schemas.User = new SimpleSchema
   "emails.$.address":
     type: String
     regEx: SimpleSchema.RegEx.Email
-    label: -> TAPi18n.__ 'email'
+    label: -> 'email'
 
   "emails.$.verified":
     type: Boolean
-    label: -> TAPi18n.__ 'userEmailVerified'
+    label: -> 'userEmail'
 
   services:
     type: Object

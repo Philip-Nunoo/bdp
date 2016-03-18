@@ -6,3 +6,6 @@ Config.fakeSchools = [
   'knust',
   'wisconsin'
 ]
+
+
+Config.vodafoneApiUrl = "http://testpay.vodafonecash.com.gh/";

@@ -35,53 +35,10 @@
 					<div class="category-content blog-posts">
 						<div class="categories-content double-border">
               {{#each cards}}
-							<div class="event-item clearfix mrgb3x">
-								<div class="col-md-6 no-padding col-sm-6 col-xs-6">
-									<div class="event-img">
-										<img src="images/resources/event-5.jpg" class="img-responsive" alt="#" />
-									</div>
-								</div>
-								<div class="col-md-6 no-padding col-sm-6 col-xs-6">
-									<div class="event-text">
-										<h6 class="f-lato text-bold">Tower Theatre Presents Meet Me In St. Louis</h6>
-										<div class="event-meta">
-											<img src="images/resources/calender.png" alt="#" />
-											<span class="f-lato text-bold">26 Dec, 2015</span>
-											<img src="images/resources/blog-user.jpg" alt="#" />
-											<span class="f-lato text-bold">Admin39</span>
-											<img src="images/resources/blog-comment.jpg" alt="#" />
-											<span class="f-lato text-bold">10</span>
-										</div>
-										<p>If you go to a contract college (ILR, Human Ecology or Agriculture & Life Sciences) and are a New York resident...</p>
-										<a href="#" class="btn-default">Read Article</a>
-									</div>
-								</div>
-							</div>
+							{{> cardItem}}
               {{/each}}
-							<div class="event-item clearfix mrgb3x">
-								<div class="col-md-6 no-padding col-sm-6 col-xs-6">
-									<div class="event-img">
-										<img src="images/resources/event-6.jpg" class="img-responsive" alt="#" />
-									</div>
-								</div>
-								<div class="col-md-6 no-padding col-sm-6 col-xs-6">
-									<div class="event-text">
-										<h6 class="f-lato text-bold">Christmas Movie Night: Showing 1</h6>
-										<div class="event-meta">
-											<img src="images/resources/calender.png" alt="#" />
-											<span class="f-lato text-bold">22 Dec, 2015</span>
-											<img src="images/resources/blog-user.jpg" alt="#" />
-											<span class="f-lato text-bold">Admin39</span>
-											<img src="images/resources/blog-comment.jpg" alt="#" />
-											<span class="f-lato text-bold">19</span>
-										</div>
-										<p>If you go to a contract college (ILR, Human Ecology or Agriculture & Life Sciences) and are a New York resident...</p>
-										<a href="#" class="btn-default">Read Article</a>
-									</div>
-								</div>
-							</div>
 						</div>
-						<div class="numbering pull-right">
+						<!-- <div class="numbering pull-right">
 							<ul class="pagination">
 								<li class="left-arrow"><a href="#"><i class="fa fa-angle-left"></i></a></li>
 								<li class="active"><a href="#">1</a></li>
@@ -91,15 +48,42 @@
 								<li><a href="#">5</a></li>
 								<li class="right-arrow"><a href="#"><i class="fa fa-angle-right"></i></a></li>
 							</ul>
-						</div>
-
+						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+  {{> buyModal}}
+  {{> verifyModal}}
 </template>
 
+<template name="cardItem">
+  <div class="event-item clearfix mrgb3x">
+    <div class="col-md-6 no-padding col-sm-6 col-xs-6">
+      <div class="event-img">
+        <img src="{{imgUrl}}" class="img-responsive" alt="#" />
+      </div>
+    </div>
+    <div class="col-md-6 no-padding col-sm-6 col-xs-6">
+      <div class="event-text">
+        <h6 class="f-lato text-bold">{{name}}</h6>
+        <div class="event-meta">
+          <img src="/images/resources/calender.png" alt="#" />
+          <span class="f-lato text-bold">26 Dec, 2016</span>
+          <img src="/images/resources/blog-user.jpg" alt="#" />
+          <span class="f-lato text-bold">Admin39</span>
+          <img src="images/resources/blog-comment.jpg" alt="#" />
+          <span class="f-lato text-bold">10</span>
+        </div>
+        <p>{{shortDesc}}</p>
+        <a href="#" class="btn-default">Read Article</a>
+        <a href="#" class="btn-default makePayment" style="background-color: #5cb85c;" data-toggle="modal" data-target="#numberInputModal">Buy</a>
+      </div>
+    </div>
+  </div>
+</template>
 <!-- home-top-section -->
 <template name="homeTopSection">
   <section class="home-top-section">

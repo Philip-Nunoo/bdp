@@ -6,6 +6,13 @@ Schemas.Cards = new SimpleSchema
     label: 'Name of card'
     max: 200
 
+  imgUrl:
+    type: String
+    label: 'Image Url'
+    autoform:
+      afFieldInput:
+        type: 'url'
+
   price:
     type: Number
     label: 'Card Amount'

@@ -21,6 +21,17 @@ Router.map ->
       else
         @next()
 
+  @route "search",
+    path: "/search"
+    template: 'search'
+    layoutTemplate: "homeLayout"
+    # fastRender: true
+    onBeforeAction: ->
+      if Meteor.user()? #?.isCustomer()
+        @redirect 'dashboard'
+      else
+        @next()
+
   @route "signIn",
     path: "/sign_in"
     layoutTemplate: "homeLayout"

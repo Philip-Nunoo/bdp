@@ -1,6 +1,105 @@
 <template name="home">
   {{> biguni}}
-  <section>
+  {{> introSection}}
+  <!-- about -->
+  <section id="howitworks">
+		<div class="container">
+			<div class="e-learning mrgt8x mrgb4x">
+				<div class="text-center">
+					<div class="section-heading mrgb5x">
+						<h2 class="text-orange text-semibold mrgb2x">How it works</h2>
+						<hr>
+						<hr>
+					</div>
+				</div>
+				<div class="e-learning-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="e-learning-item mrgb5x">
+								<img src="images/resources/learning-3.jpg" alt="#"/>
+								<img src="images/resources/overlay-img3.png" class="overlay-img" alt="#" />
+								<h6>Browse Available Applications </h6>
+								<p>Abundant continuing education courses are available for personal enrichment.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="e-learning-item mrgb5x">
+								<img src="images/resources/learning-1.jpg" alt="#"/>
+								<img src="images/resources/overlay-img1.png" class="overlay-img" alt="#" />
+								<h6>Identify an Institution</h6>
+								<p>Get information about the institution of your choice.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="e-learning-item mrgb5x">
+								<img src="images/resources/learning-2.jpg" alt="#"/>
+								<img src="images/resources/overlay-img2.png" class="overlay-img" alt="#" />
+								<h6>Purchase Application Card</h6>
+								<p>Purchase application cards directly from the platform using Vodafone Cash.</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="biguni">
+  <div class="bg-uni">
+		<div class="container">
+			<header class="bg-header clearfix mrgt7x">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="lower-header">
+						<div class="logo pull-left">
+						 	<a id="brand" class="clearfix navbar-brand logo" href="index.html">CardPay</a>
+						</div>
+						<div class="menu pull-right">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				                <span class="sr-only">Toggle navigation</span>
+				                <span class="icon-bar first"></span>
+				                <span class="icon-bar middle"></span>
+				                <span class="icon-bar last"></span>
+			            	</button>
+							<nav id="navbar" class="navbar navbar-collapse collapse">
+								<ul class="navbar nav">
+									<li class="active"><a href="index.html">HOME</a></li>
+									<li><a href="#about">ABOUT</a></li>
+									<li><a href="#howitworks">HOW IT WORKS</a></li>
+									<li><a href="blog.html">BLOG POST</a></li>
+									<li><a href="#contact">CONTACT</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="main-slider">
+				<div class="slider-carousel">
+					<div class="item">
+						<div class="slider-img">
+							<img src="images/myimages/student3.jpg" class="img-responsive" alt="#" />
+							<div class="slider-text">
+								<h2 class="info-head"> Get all your Academic Cards,<br>  anywhere, at your own time</h2>
+								<div class="call-to-action">
+									<button type="button" class="btn btn-success btn-lg" width="60%">Get a Card</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- intro section -->
+<template name="introSection">
+  <section class="intro">
 		<div class="container">
 			<div class="mini-sliders text-center mrgb9x">
 				<div class="row">
@@ -64,53 +163,6 @@
 	</section>
 </template>
 
-<template name="biguni">
-  <div class="bg-uni">
-		<div class="container">
-			<header class="bg-header clearfix mrgt7x">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="lower-header">
-						<div class="logo pull-left">
-						 	<a id="brand" class="clearfix navbar-brand logo" href="index.html">CardPay</a>
-						</div>
-						<div class="menu pull-right">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				                <span class="sr-only">Toggle navigation</span>
-				                <span class="icon-bar first"></span>
-				                <span class="icon-bar middle"></span>
-				                <span class="icon-bar last"></span>
-			            	</button>
-							<nav id="navbar" class="navbar navbar-collapse collapse">
-								<ul class="navbar nav">
-									<li class="active"><a href="index.html">HOME</a></li>
-									<li><a href="#about">ABOUT</a></li>
-									<li><a href="#howitworks">HOW IT WORKS</a></li>
-									<li><a href="blog.html">BLOG POST</a></li>
-									<li><a href="#contact">CONTACT</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</header>
-			<div class="main-slider">
-				<div class="slider-carousel">
-					<div class="item">
-						<div class="slider-img">
-							<img src="images/myimages/student3.jpg" class="img-responsive" alt="#" />
-							<div class="slider-text">
-								<h2 class="info-head"> Get all your Academic Cards,<br>  anywhere, at your own time</h2>
-								<div class="call-to-action">
-									<button type="button" class="btn btn-success btn-lg" width="60%">Get a Card</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</template>
 <template name="navBar">
   <div id="page">
     <div id="header">

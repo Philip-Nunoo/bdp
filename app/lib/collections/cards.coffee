@@ -18,7 +18,7 @@ Schemas.Cards = new SimpleSchema
   longDesc:
     type: String
     label: 'Long Description'
-    max: 2500
+    min: 1500
     autoform:
       afFieldInput:
         type: 'summernote'

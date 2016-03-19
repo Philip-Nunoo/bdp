@@ -41,3 +41,13 @@ Router.map ->
         @redirect 'dashboard'
       else
         @next()
+
+  @route "signUp",
+    path: "/register"
+    layoutTemplate: "homeLayout"
+    # fastRender: true
+    onBeforeAction: ->
+      if Meteor.user()?.isCustomer() or Meteor.user()?.isGuard()
+        @redirect 'dashboard'
+      else
+        @next()

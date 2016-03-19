@@ -33,7 +33,7 @@ Router.map ->
         @next()
 
   @route "signIn",
-    path: "/sign_in"
+    path: "/sign-in"
     layoutTemplate: "homeLayout"
     # fastRender: true
     onBeforeAction: ->

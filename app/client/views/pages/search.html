@@ -1,0 +1,405 @@
+<template name="search">
+  {{> homeTopSection}}
+  {{> titlePage}}
+  <section>
+		<div class="container">
+			<div class="course-categories row mrgt10x mrgb9x">
+				<div class="col-md-3">
+					<div class="blog-sidebar">
+						<!-- <div class="search-bar">
+							<form name="search-course" method="post">
+								<input type="text" class="form-control" placeholder="Search">
+
+							</form>
+						</div>
+						<div class="recent-posts mrgt5x mrgb6x">
+							<ul class="nav-pills double-border clearfix">
+								<li class="active"><a href="#popular" data-toggle="tab">MOST POPULAR</a></li>
+								<li><a href="#recent" data-toggle="tab">RECENT</a></li>
+							</ul>
+							<div class="tab-content">
+								<div id="popular" class="tab-pane active fade in">
+									<div class="post-widget clearfix">
+										<div class="recent-post-img">
+											<img src="images/resources/recent-post1.jpg" alt="#" />
+											<div class="img-hover"></div>
+										</div>
+										<div class="post-area">
+											<span class="f-lato text-bold">Credits eat up their remaining general</span>
+											<div class="recent-post-meta">
+												<img src="images/resources/calender.jpg" alt="#" />
+												<span class="f-lato text-bold">7 Dec, 2015</span>
+											</div>
+											<a href="#" class="text-orange">Read More</a>
+										</div>
+									</div>
+									<div class="post-widget clearfix">
+										<div class="recent-post-img">
+											<img src="images/resources/recent-post2.jpg" alt="#" />
+											<div class="img-hover"></div>
+										</div>
+										<div class="post-area">
+											<span class="f-lato text-bold">Who completed 4 years of study</span>
+											<div class="recent-post-meta">
+												<img src="images/resources/calender.jpg" alt="#" />
+												<span class="f-lato text-bold">7 Dec, 2015</span>
+											</div>
+											<a href="#" class="text-orange">Read More</a>
+										</div>
+									</div>
+									<div class="post-widget clearfix">
+										<div class="recent-post-img">
+											<img src="images/resources/recent-post3.jpg" alt="#" />
+											<div class="img-hover"></div>
+										</div>
+										<div class="post-area">
+											<span class="f-lato text-bold">To stick around for one more year</span>
+											<div class="recent-post-meta">
+												<img src="images/resources/calender.jpg" alt="#" />
+												<span class="f-lato text-bold">7 Dec, 2015</span>
+											</div>
+											<a href="#" class="text-orange">Read More</a>
+										</div>
+									</div>
+									<div class="post-widget clearfix">
+										<div class="recent-post-img">
+											<img src="images/resources/recent-post4.jpg" alt="#" />
+											<div class="img-hover"></div>
+										</div>
+										<div class="post-area">
+											<span class="f-lato text-bold">After 3 years of undergraduate</span>
+											<div class="recent-post-meta">
+												<img src="images/resources/calender.jpg" alt="#" />
+												<span class="f-lato text-bold">7 Dec, 2015</span>
+											</div>
+											<a href="#" class="text-orange">Read More</a>
+										</div>
+									</div>
+								</div>
+								<div id="recent" class="tab-pane fade">
+									<div class="post-widget clearfix">
+										<div class="recent-post-img">
+											<img src="images/resources/recent-post1.jpg" alt="#" />
+											<div class="img-hover"></div>
+										</div>
+										<div class="post-area">
+											<span class="f-lato text-bold">Credits eat up their remaining general</span>
+											<div class="recent-post-meta">
+												<img src="images/resources/calender.jpg" alt="#" />
+												<span class="f-lato text-bold">7 Dec, 2015</span>
+											</div>
+											<a href="#" class="text-orange">Read More</a>
+										</div>
+									</div>
+									<div class="post-widget clearfix">
+										<div class="recent-post-img">
+											<img src="images/resources/recent-post2.jpg" alt="#" />
+											<div class="img-hover"></div>
+										</div>
+										<div class="post-area">
+											<span class="f-lato text-bold">Who completed 4 years of study</span>
+											<div class="recent-post-meta">
+												<img src="images/resources/calender.jpg" alt="#" />
+												<span class="f-lato text-bold">7 Dec, 2015</span>
+											</div>
+											<a href="#" class="text-orange">Read More</a>
+										</div>
+									</div>
+									<div class="post-widget clearfix">
+										<div class="recent-post-img">
+											<img src="images/resources/recent-post3.jpg" alt="#" />
+											<div class="img-hover"></div>
+										</div>
+										<div class="post-area">
+											<span class="f-lato text-bold">To stick around for one more year</span>
+											<div class="recent-post-meta">
+												<img src="images/resources/calender.jpg" alt="#" />
+												<span class="f-lato text-bold">7 Dec, 2015</span>
+											</div>
+											<a href="#" class="text-orange">Read More</a>
+										</div>
+									</div>
+									<div class="post-widget clearfix">
+										<div class="recent-post-img">
+											<img src="images/resources/recent-post4.jpg" alt="#" />
+											<div class="img-hover"></div>
+										</div>
+										<div class="post-area">
+											<span class="f-lato text-bold">After 3 years of undergraduate</span>
+											<div class="recent-post-meta">
+												<img src="images/resources/calender.jpg" alt="#" />
+												<span class="f-lato text-bold">7 Dec, 2015</span>
+											</div>
+											<a href="#" class="text-orange">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+						<!-- <div class="topics mrgb5x">
+							<span class="f-lato text-bold double-border">BROWSE BY TOPIC</span>
+							<ul>
+								<li><i class="fa fa-circle"></i><a href="#" class="f-lato">Worship Services (24)</a></li>
+								<li><i class="fa fa-circle"></i><a href="#" class="f-lato">Special Event (33)</a></li>
+								<li><i class="fa fa-circle"></i><a href="#" class="f-lato">Maintenance (41)</a></li>
+								<li><i class="fa fa-circle"></i><a href="#" class="f-lato">Workshop (21)</a></li>
+								<li><i class="fa fa-circle"></i><a href="#" class="f-lato">Banquet (10)</a></li>
+								<li><i class="fa fa-circle"></i><a href="#" class="f-lato">Camp (20)</a></li>
+								<li><i class="fa fa-circle"></i><a href="#" class="f-lato">Class (64)</a></li>
+							</ul>
+						</div> -->
+						<!-- <div class="active-std mrgb5x clearfix">
+							<span class="f-lato text-bold double-border">ACTIVE STUDENTS</span>
+							<div class="students-row">
+								<div class="std-block">
+									<img src="images/resources/std-1.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+								<div class="std-block">
+									<img src="images/resources/std-2.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+								<div class="std-block">
+									<img src="images/resources/std-3.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+								<div class="std-block">
+									<img src="images/resources/std-4.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+								<div class="std-block">
+									<img src="images/resources/std-5.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+								<div class="std-block">
+									<img src="images/resources/std-6.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+								<div class="std-block">
+									<img src="images/resources/std-7.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+								<div class="std-block">
+									<img src="images/resources/std-8.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+								<div class="std-block">
+									<img src="images/resources/std-9.jpg" alt="#" />
+									<div class="img-hover"></div>
+								</div>
+							</div>
+						</div> -->
+						<div class="sidebar-newsletter clearfix mrgb4x">
+							<span class="f-lato text-bold double-border">NEWSLETTER</span>
+							<p>Click the link below to download our monthly newsletter.</p>
+							<div class="newsletter-date">
+								<a href="#" class="f-lato text-bold"><i class="fa fa-circle"></i>October Newsletter</a>
+								<a href="#" class="f-lato text-bold"><i class="fa fa-circle"></i>November Newsletter</a>
+							</div>
+							<span class="f-lato sub">Not a member yet? </span><a href="#" class="f-lato text-orange text-bold">  Subscribe now.</a>
+							<form id="subscribe-form" method="post">
+								<input type="text" class="form-control">
+								<a href="#" class="btn-default">Subscribe</a>
+							</form>
+						</div>
+						<div class="sidebar-tags">
+							<span class="f-lato text-bold double-border">TAGS</span>
+							<a href="#">university</a>
+							<a href="#">student</a>
+							<a href="#">course</a>
+							<a href="#">studies</a>
+							<a href="#">latest events</a>
+							<a href="#">popular courses</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="category-content blog-posts">
+						<div class="categories-content double-border">
+							<div class="event-item clearfix mrgb3x">
+								<div class="col-md-6 no-padding col-sm-6 col-xs-6">
+									<div class="event-img">
+										<img src="images/resources/event-5.jpg" class="img-responsive" alt="#" />
+									</div>
+								</div>
+								<div class="col-md-6 no-padding col-sm-6 col-xs-6">
+									<div class="event-text">
+										<h6 class="f-lato text-bold">Tower Theatre Presents Meet Me In St. Louis</h6>
+										<div class="event-meta">
+											<img src="images/resources/calender.png" alt="#" />
+											<span class="f-lato text-bold">26 Dec, 2015</span>
+											<img src="images/resources/blog-user.jpg" alt="#" />
+											<span class="f-lato text-bold">Admin39</span>
+											<img src="images/resources/blog-comment.jpg" alt="#" />
+											<span class="f-lato text-bold">10</span>
+										</div>
+										<p>If you go to a contract college (ILR, Human Ecology or Agriculture & Life Sciences) and are a New York resident...</p>
+										<a href="#" class="btn-default">Read Article</a>
+									</div>
+								</div>
+							</div>
+							<div class="event-item clearfix mrgb3x">
+								<div class="col-md-6 no-padding col-sm-6 col-xs-6">
+									<div class="event-img">
+										<img src="images/resources/event-6.jpg" class="img-responsive" alt="#" />
+									</div>
+								</div>
+								<div class="col-md-6 no-padding col-sm-6 col-xs-6">
+									<div class="event-text">
+										<h6 class="f-lato text-bold">Christmas Movie Night: Showing 1</h6>
+										<div class="event-meta">
+											<img src="images/resources/calender.png" alt="#" />
+											<span class="f-lato text-bold">22 Dec, 2015</span>
+											<img src="images/resources/blog-user.jpg" alt="#" />
+											<span class="f-lato text-bold">Admin39</span>
+											<img src="images/resources/blog-comment.jpg" alt="#" />
+											<span class="f-lato text-bold">19</span>
+										</div>
+										<p>If you go to a contract college (ILR, Human Ecology or Agriculture & Life Sciences) and are a New York resident...</p>
+										<a href="#" class="btn-default">Read Article</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="numbering pull-right">
+							<ul class="pagination">
+								<li class="left-arrow"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li class="right-arrow"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<!-- home-top-section -->
+<template name="homeTopSection">
+  <section class="home-top-section">
+    <header class="bg-header clearfix">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="logo">
+            <!-- <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="images/logo.png" alt="#"></a> -->
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="top-header clearfix">
+            <div class="pull-right">
+              <ul class="login-ac">
+                <li><a href="{{pathFor 'signIn'}}">Login</a></li>
+                <li><a href="{{pathFor 'signUp'}}">Register</a></li>
+                <li><a href="#">Account</a></li>
+              </ul>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                <li><span> - </span></li>
+                <li class="top-search">
+                  <form action="#">
+                    <input id="search-now" type="text" placeholder="Search ....">
+                    <a id="search-click" href="javascript:;"><i class="fa fa-search"></i></a>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lower-header">
+
+            <div class="menu pull-right">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar first"></span>
+                <span class="icon-bar middle"></span>
+                <span class="icon-bar last"></span>
+              </button>
+
+              <nav id="navbar" class="navbar navbar-collapse collapse">
+                <!-- <ul class="navbar nav">
+                  <li class="active"><a href="index.html">HOME</a></li>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PAGES</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="home-2.html">Home 2</a></li>
+                      <li><a href="account-inbox.html">Account Inbox</a></li>
+                      <li><a href="account-learning.html">Account Learning</a></li>
+                      <li><a href="account-profileguest.html">Account Profile Guest</a></li>
+                      <li><a href="account-profileowner.html">Account Profile Owner</a></li>
+                      <li><a href="account-teaching.html">Account Teaching</a></li>
+                      <li><a href="events.html">Events</a></li>
+                      <li><a href="envents-singlepost.html">Event Single Post</a></li>
+                      <li><a href="our-professors.html">Our Professors</a></li>
+                      <li><a href="professor-biography.html">Professor Detail</a></li>
+                      <li><a href="quiz-intro.html">Quiz Introduction</a></li>
+                      <li><a href="quiz-ex.html">Quiz Example</a></li>
+                      <li><a href="quiz-finish.html">Quiz Finish</a></li>
+                      <li><a href="search-results.html">Search Results</a></li>
+                      <li><a href="search-noresults.html">Search No Results</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="course-basicinfo.html">Create Course</a></li>
+                      <li><a href="course-annoucment.html">Course Learning</a></li>
+                      <li><a href="course-sidebar.html">Course Sidebar</a></li>
+                      <li><a href="course-singlepost.html">Course Single Post</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">OUR RATES</a></li>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ASSIGNMENT</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="assig-aftersub.html">Assignment After Submission</a></li>
+                      <li><a href="assig-feedback-rece.html">Assignment Feedback Received</a></li>
+                      <li><a href="assig-listintro.html">Assignment List</a></li>
+                      <li><a href="assign-marked.html">Assignment Marked</a></li>
+                      <li><a href="assign-mysub.html">Assignment Submission</a></li>
+                      <li><a href="assig-submit.html">Assignment Submit</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOG</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog.html">Blog Post</a></li>
+                      <li><a href="blogsinglepost.html">Blog Single Post</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contactus.html">CONTACT</a></li>
+                </ul>-->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+</template>
+
+<!-- title page -->
+<template name="titlePage">
+  <section class="title-bg course-page">
+		<div class="title-overlay">
+		 	<div class="title-inner">
+				<div class="container">
+					<div class="page-title">
+						<h2 class="text-white text-normal pull-right mrgt7x">Cards <span class="low-purple">On Sale</span></h2>
+					</div>
+				</div>
+				<div class="breadcrumb-banner">
+					<ul class="breadcrumb">
+						<li><a href="/">BACK TO HOME</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</template>

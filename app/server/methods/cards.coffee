@@ -33,11 +33,15 @@ Meteor.methods
     check(doc, Object)
     check(doc.type, String)
     check(doc.cardId, String)
-    check(doc.obj, Array)
+    check(doc.obj2, Array)
 
+    arr = []
+    for i in doc.obj2
+      arr.push({code: i, issued: false})
+      # body...
     tokens = {
       type: doc.type
-      obj: doc.obj
+      obj: arr
     }
     idSelector = doc.cardId
 

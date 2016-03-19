@@ -21,9 +21,14 @@ Schemas.Tokens = new SimpleSchema
     optional: true
 
   obj:
+    type: [Object]
+    optional: true
+    blackbox: true
+
+  obj2:
     type: [String]
     optional: true
-
+    
   cardId:
     type: String
     optional: true

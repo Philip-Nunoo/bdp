@@ -1,7 +1,7 @@
 Router.map ->
   @route "home",
     path: "/"
-    template: 'generationPage'
+    template: 'home'
     layoutTemplate: "homeLayout"
     # fastRender: true
     onBeforeAction: ->

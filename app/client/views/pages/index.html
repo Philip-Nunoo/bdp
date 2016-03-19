@@ -3,41 +3,8 @@
   {{> introSection}}
   <!-- about -->
   {{> howItWorksSection}}
-  <section class="bg-purple">
-		<div class="container">
-			<div class="featured-post row mrgt7x mrgb7x">
-				<div class="col-md-4">
-					<div class="section-desc">
-						<h1 class="vodaline">Don't have Vodafone Cash?</h1>
-						<p>
-							Register at the nearest Vodafone Outlet
-						</p>
-
-					</div>
-				</div>
-				<div class="col-md-8">
-					<div class="section-post">
-						<div class="item">
-							<div class="section-img">
-								<img src="images/myimages/vdcash.jpg" class="img-responsive" alt="#" width="70%" height="70%"/>
-							</div>
-							<div class="vdbenefits">
-								<p>
-									Benefits of Having Vodafone Cash
-								</p>
-								<ul>
-									<li>Easy and Safe Transaction</li>
-									<li>Zero costs on all Transaction</li>
-									<li>Easy and Safe Transaction</li>
-								</ul>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  {{> bgpurple}}
+  {{> contact}}
 </template>
 
 <template name="biguni">
@@ -201,6 +168,95 @@
 			</div>
 		</div>
 	</section>
+</template>
+
+<!-- gb purple -->
+<template name="bgpurple">
+  <section class="bg-purple">
+		<div class="container">
+			<div class="featured-post row mrgt7x mrgb7x">
+				<div class="col-md-4">
+					<div class="section-desc">
+						<h1 class="vodaline">Don't have Vodafone Cash?</h1>
+						<p>
+							Register at the nearest Vodafone Outlet
+						</p>
+
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="section-post">
+						<div class="item">
+							<div class="section-img">
+								<img src="images/myimages/vdcash.jpg" class="img-responsive" alt="#" width="70%" height="70%"/>
+							</div>
+							<div class="vdbenefits">
+								<p>
+									Benefits of Having Vodafone Cash
+								</p>
+								<ul>
+									<li>Easy and Safe Transaction</li>
+									<li>Zero costs on all Transaction</li>
+									<li>Easy and Safe Transaction</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<!-- contact -->
+<template name="contact">
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="well well-sm">
+            <form class="form-horizontal" action="" method="post">
+              <fieldset>
+                <legend class="text-center">Contact us</legend>
+
+                <!-- Name input-->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="name">Name</label>
+                  <div class="col-md-9">
+                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Email input-->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                  <div class="col-md-9">
+                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Message body -->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="message">Your message</label>
+                  <div class="col-md-9">
+                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                  </div>
+                </div>
+
+                <!-- Form actions -->
+                <div class="form-group">
+                  <div class="col-md-12 text-right">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 <template name="navBar">
   <div id="page">
